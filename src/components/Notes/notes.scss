@@ -1,0 +1,43 @@
+.notes{
+    position: relative;
+    margin-top: 30px;
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-size: 22px;
+        line-height: 28px;
+        color: #323232;
+    }
+    &__checker{
+        background: linear-gradient(0deg, rgba(103, 80, 164, 0.11), rgba(103, 80, 164, 0.11)), #FFFBFE;
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        padding: 18px 20px;
+        gap: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #6750a4;
+        cursor: pointer;
+        span{
+            font-weight: 500;
+        }
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 360px));
+        gap: 24px;
+        &.column{
+            grid-template-columns: initial;
+            .notes__date{
+                text-align: right;
+            }
+        }
+    }
+}
